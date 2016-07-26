@@ -1,20 +1,29 @@
 {% extends 'master' %}
 {% block content %}
-<main class="photos">
+<div class="photo-page">
+  <header class="photos-header">
+    <div class="container">
+      <button class='photos-header__button'>
+        <span class="photos-header__button--btn fa fa-plus-circle"></span>
+      </button>
+    </div>
+  </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="row__item photo-box">
-        <div class="photo-box__image">
-          <img class="photo-box__image--img" src="http://placecage.com/200/200"></img>
-        </div>
-        <div class="photo-box__description">
-          <p class="photo-box__description--text">
-            description
-          </p>
+  <main class="photos">
+    <div class="container">
+      <div class="row">
+        <div class="row__item photo-box">
+          <div class="photo-box__image">
+            <img class="photo-box__image--img" src="http://placecage.com/200/200"></img>
+          </div>
+          <div class="photo-box__description">
+            <p class="photo-box__description--text">
+              description
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
+</div>
 {% endblock %}

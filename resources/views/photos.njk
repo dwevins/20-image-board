@@ -10,12 +10,16 @@
   </header>
   <section class="form">
     <div class="container">
-      <form action="/photos" method='POST' placeholder='Image URL' class="new-pic-form"></form>
+      <form action="/photos" method='POST' class="new-pic-form"></form>
         <div class="form-input">
-          <input type="text" class="photo-url">
+          <input type="text" placeholder='Image URL' class="photo-url">
         </div>
         <div class="form-input">
-          <textarea class='photo-description' placeholder='Image Caption' rows="8" cols="40"></textarea>
+          <textarea class='photo-description' placeholder='Image Caption'></textarea>
+        </div>
+        <div class="form-input__buttons">
+          <button class="form-input__buttons--cancel">CANCEL</button>
+          <button class="form-input__buttons--add"><span class="fa fa-picture-o"></span>Add Image</button>
         </div>
     </div>
   </section>

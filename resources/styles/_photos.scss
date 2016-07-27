@@ -1,11 +1,13 @@
 .row {
-  background-color: $bg-gray;
-  // width: calc(100% - 10rem);
   margin: 0 auto;
+  background-color: $bg-gray;
+  border: 1px solid darken($bg-gray, 5%);
+
 
   &__item {
     width: calc(100% - 10rem);
     margin: 0 auto;
+    margin-bottom: 2 * $gutter;
     background-color: $white;
   }
 }

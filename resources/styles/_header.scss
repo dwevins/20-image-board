@@ -1,4 +1,15 @@
 .photos-header {
   width: 100%;
   background-color: $hdr-blue;
+
+  &__button {
+    border: 0;
+    background-color: inherit;
+    font-size: 3rem;
+    outline: none;
+
+    &--btn {
+      color: $btn-blue;
+    }
+  }
 }

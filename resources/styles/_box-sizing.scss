@@ -16,3 +16,9 @@ html {
   max-width: $max-content-width;
   margin: 0 auto;
 }
+
+.photo-page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

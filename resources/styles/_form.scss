@@ -1,0 +1,13 @@
+.form {
+  background-color: $white;
+
+  &-input {
+    width: 100%;
+  }
+}
+
+.new-pic-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

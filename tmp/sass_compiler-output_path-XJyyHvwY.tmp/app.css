@@ -2244,3 +2244,13 @@ body {
     outline: none; }
     .photos-header__button--btn {
       color: #082238; }
+
+.form {
+  background-color: #fff; }
+  .form-input {
+    width: 100%; }
+
+.new-pic-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }

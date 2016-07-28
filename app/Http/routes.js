@@ -19,7 +19,6 @@ const Route = use('Route');
 
 Route.on('/').render('welcome');
 
-Route.get('/photos', function * (req, res) {
-  const { url, description } = yield req.session.all();
-  yield res.sendView('photos', { url, description });
-});
+Route.get('/photos', 'PhotosController.list');
+
+Route.post('/photos', 'PhotosController.new');

@@ -3,6 +3,14 @@
 
   &-input {
     width: 100%;
+
+    &__field {
+      width: 100%;
+    }
+
+    &__buttons {
+      text-align: right;
+    }
   }
 }
 
@@ -10,4 +18,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.form-button {
+  color: $white;
+  border: 0;
+  font-size: 1rem;
+  padding: $gutter;
+
+  &__add {
+    background-color: $btn-green;
+  }
+
+  &__cancel {
+    background-color: $btn-gray;
+  }
 }

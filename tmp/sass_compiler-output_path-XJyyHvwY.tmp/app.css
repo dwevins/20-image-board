@@ -2249,8 +2249,22 @@ body {
   background-color: #fff; }
   .form-input {
     width: 100%; }
+    .form-input__field {
+      width: 100%; }
+    .form-input__buttons {
+      text-align: right; }
 
 .new-pic-form {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.form-button {
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem; }
+  .form-button__add {
+    background-color: #17aa56; }
+  .form-button__cancel {
+    background-color: #b6b6b6; }

@@ -11,6 +11,7 @@
   <section class="form">
     <div class="container">
       <form action="/photos" method='POST' class="new-pic-form">
+        {{ csrfField }}
         <div class="form-input">
           <input type="text" placeholder='Image URL' class="photo-url form-input__field">
         </div>

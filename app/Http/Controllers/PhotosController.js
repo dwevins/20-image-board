@@ -10,8 +10,8 @@ class PhotosController {
   * new(req, res) {
     const { url, description } = yield req.session.all();
     const newPhoto = new Photo({ url, description });
-    yield newPhoto.save();
-    res.send(newPhoto);
+    yield req.session.put(newPhoto);
+    yield res.sendView('photos');
   }
 }
 

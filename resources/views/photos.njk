@@ -1,0 +1,47 @@
+{% extends 'master' %}
+
+{% block content %}
+<div class="photo-page">
+  <header class="photos-header">
+    <div class="container">
+      <button class='photos-header__button'>
+        <span class="photos-header__button--btn fa fa-plus-circle"></span>
+      </button>
+    </div>
+  </header>
+  <section class="form">
+    <div class="container">
+      <form action="/photos" method='POST' class="new-pic-form">
+        {{ csrfField }}
+        <div class="form-input">
+          <input type="text" name='url' placeholder='Image URL' class="photo-url form-input__field">
+        </div>
+        <div class="form-input">
+          <textarea name='caption' class='photo-description form-input__field' placeholder='Image Caption'></textarea>
+        </div>
+        <div class="form-input__buttons">
+          <button class="form-input__buttons--cancel form-button form-button__cancel">CANCEL</button>
+          <button class="form-input__buttons--add form-button form-button__add"><span class="fa fa-picture-o"></span>Add Image</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <main class="photos">
+    <div class="row">
+    <div class="container">
+        {% for photo in photos %}
+          <div class="row__item photo-box">
+            <div class="photo-box__image">
+              <img class="photo-box__image--img" src={{photo.url}}></img>
+            </div>
+            <div class="photo-box__description">
+              <p class="photo-box__description--text">
+                {{photo.caption}}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+  </main>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+.row {
+  margin: 0 auto;
+  background-color: $bg-gray;
+  border: 1px solid darken($bg-gray, 5%);
+
+
+  &__item {
+    width: calc(100% - 10rem);
+    min-width: $min-content-width;
+    margin: $gutter auto;
+    background-color: $white;
+  }
+}
+
+.photo-box {
+
+  &__image {
+    width: 100%;
+    margin: 0 auto;
+
+    &--img {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    padding: $gutter;
+  }
+}

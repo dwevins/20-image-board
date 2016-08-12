@@ -14,10 +14,10 @@
       <form action="/photos" method='POST' class="new-pic-form">
         {{ csrfField }}
         <div class="form-input">
-          <input type="text" placeholder='Image URL' class="photo-url form-input__field">
+          <input type="text" name='url' placeholder='Image URL' class="photo-url form-input__field">
         </div>
         <div class="form-input">
-          <textarea class='photo-description form-input__field' placeholder='Image Caption'></textarea>
+          <textarea name='caption' class='photo-description form-input__field' placeholder='Image Caption'></textarea>
         </div>
         <div class="form-input__buttons">
           <button class="form-input__buttons--cancel form-button form-button__cancel">CANCEL</button>

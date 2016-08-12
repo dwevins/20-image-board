@@ -9,9 +9,9 @@ class PhotosController {
 
   * new(req, res) {
     // Get user input
-    const input = req.all();
-
-    res.send(input);
+    const { url, caption } = req.all();
+    yield Photo.create({ url, caption });
+    res.redirect('back');
   }
 }
 

@@ -6,20 +6,26 @@
 
     &__field {
       width: 100%;
+      font-size: 1rem;
+      padding: $gutter;
+      border: 1px solid $field-gray;
+      margin-top: 0.5 * $gutter;
     }
 
     &__buttons {
+      margin-top: 0.5 * $gutter;
       text-align: right;
     }
   }
 }
 
-.new-pic-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2 * $gutter 0;
-}
+// .new-pic-form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 2 * $gutter 0;
+// }
+
 
 .form-button {
   color: $white;
@@ -34,4 +40,8 @@
   &__cancel {
     background-color: $btn-gray;
   }
+}
+
+.hidden {
+  display: none;
 }

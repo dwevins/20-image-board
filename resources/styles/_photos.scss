@@ -6,6 +6,7 @@
 
   &__item {
     width: calc(100% - 10rem);
+    min-width: $min-content-width;
     margin: 0 auto;
     margin-bottom: 2 * $gutter;
     background-color: $white;

@@ -13,6 +13,7 @@ html {
 }
 
 .container {
+  width: calc(100% - #{$gutter});
   max-width: $max-content-width;
   margin: 0 auto;
 }

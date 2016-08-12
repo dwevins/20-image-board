@@ -2222,8 +2222,7 @@ body {
   .row__item {
     width: calc(100% - 10rem);
     min-width: 10rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
     background-color: #fff; }
 
 .photo-box__image {
@@ -2241,6 +2240,7 @@ body {
   padding: 0.5rem 0; }
   .photos-header__button {
     border: 0;
+    padding: 0;
     background-color: inherit;
     font-size: 2rem;
     outline: none; }

@@ -1,4 +1,5 @@
 {% extends 'master' %}
+
 {% block content %}
 <div class="photo-page">
   <header class="photos-header">
@@ -30,18 +31,18 @@
   <main class="photos">
     <div class="container">
       <div class="row">
-        {# {% for $_SESSION as sequence %} #}
-        <div class="row__item photo-box">
-          <div class="photo-box__image">
-            <img class="photo-box__image--img" src="http://placecage.com/200/200"></img>
+        {% for photo in photos %}
+          <div class="row__item photo-box">
+            <div class="photo-box__image">
+              <img class="photo-box__image--img" src={{photo.url}}></img>
+            </div>
+            <div class="photo-box__description">
+              <p class="photo-box__description--text">
+                {{photo.caption}}
+              </p>
+            </div>
           </div>
-          <div class="photo-box__description">
-            <p class="photo-box__description--text">
-              description
-            </p>
-          </div>
-        </div>
-        {# {% endfor %} #}
+        {% endfor %}
   </main>
 </div>
 {% endblock %}

@@ -19,6 +19,6 @@ const Route = use('Route');
 
 Route.on('/').render('welcome');
 
-Route.get('/photos', 'PhotosController.list');
+Route.get('/photos', 'PhotosController.index');
 
 Route.post('/photos', 'PhotosController.new');

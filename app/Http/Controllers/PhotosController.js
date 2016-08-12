@@ -2,16 +2,16 @@
 const Photo = use('App/Model/Photo');
 
 class PhotosController {
-  * list(req, res) {
-    const { url, description } = yield req.session.all();
-    yield res.sendView('photos', { url, description });
+  * index(req, res) {
+    const photos = yield Photo.all();
+    yield res.sendView('photos', { photos: photos.toJSON() });
   }
 
   * new(req, res) {
-    const { url, description } = yield req.session.all();
-    const newPhoto = new Photo({ url, description });
-    yield req.session.put(newPhoto);
-    yield res.sendView('photos');
+    // Get user input
+    const input = req.all();
+
+    res.send(input);
   }
 }
 
